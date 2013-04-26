@@ -97,7 +97,7 @@ So, it's time to start SAPNS server up. This couldn't be simpler.
 	
 	$apns = new SAPNS\SimpleAPNS();
 	
-	$apns->setAPNSHost(APNS_HOST)
+	$apns->setApnsHost(APNS_HOST)
 		 ->setApnsPort(APNS_PORT)
 		 ->setApnsCert(APNS_CERT)
 		 ->setServerPort(SERVER_PORT)
