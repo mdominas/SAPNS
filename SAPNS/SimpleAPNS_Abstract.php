@@ -209,7 +209,7 @@ abstract class SimpleAPNS_Abstract implements ISimpleAPNS
 		$payload['aps'] = array('alert' => $message, 'sound' => 'default');
 		$payload = json_encode($payload);
 		$msg = chr(0) . chr(0) . chr(32) . pack('H*', str_replace(' ', '', $device_id)) . chr(0) . chr(strlen($payload)) . $payload;
-		return fwrite($this->apns_socket, $msg) === false ? false : true;
+		return fwrite($this->apns_socket, $msg) ? true : false;
 	}
 
 	 /**
