@@ -83,7 +83,7 @@ IMPORTANT. Push delegate function must return a boolean value. SAPNS server will
 			return false;
 		}
 
-		/* 	Update database to flag for just processed notifications and return TRUE 
+		/* 	Update database flag for just processed notifications and return TRUE 
 		* 	so that SAPNS server can continue accepting new connections
 		*/
 
