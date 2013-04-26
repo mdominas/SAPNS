@@ -13,7 +13,7 @@
 namespace SAPNS;
 use SAPNS\SimpleAPNS_Exception;
 
-class SimpleAPNS_Abstract implements ISimpleAPNS
+abstract class SimpleAPNS_Abstract implements ISimpleAPNS
 {
 	/**
 	* Socket resource for APNS connection
