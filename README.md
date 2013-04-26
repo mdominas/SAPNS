@@ -8,4 +8,4 @@ Some primitive tools "recommend" a cron-job approach to periodically poke a scri
 
 There are also more advanced PHP tools available that are typically run as background processes (daemons) re-using APNS connection socket once connection is established, however tools I've come across so far were either hugely overcomplicated or didn't provide enough flexibility to separate out a business logic behind sending push notifications.
 
-SAPNS is a tool I wrote to address two issues I mentioned above. It favours simplicity over complexity yet it's powerful enough to let you implement your own business logic behind sending push notifications in an elegant and neat way.
+SAPNS is a tool I wrote to address two issues I mentioned above. It favours simplicity over complexity yet it's powerful enough to let you implement your own business logic behind sending push notifications in an elegant and simple way.
