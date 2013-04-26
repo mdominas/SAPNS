@@ -62,7 +62,7 @@ try
 			return false;
 		}
 
-		/* 	Update database to flag for just processed notifications and return TRUE 
+		/* 	Update database flag for just processed notifications and return TRUE 
 		* 	so that SAPNS server can continue accepting new connections
 		*/
 
