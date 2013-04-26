@@ -175,6 +175,7 @@ abstract class SimpleAPNS_Abstract implements ISimpleAPNS
 
 						if (!$result) 
 						{
+							self::log("Broken APNS pipe... restarting server");
 							fwrite($client, 'Broken APNS pipe... restarting server');
 							self::disconnect($client);
 							break;
