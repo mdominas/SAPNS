@@ -129,7 +129,7 @@ class SimpleAPNS_Abstract implements ISimpleAPNS
 	* This method does multiple things in the following order :
 	* 1) Sets maximum execution time to infinite.
 	* 2) Creates the main server's loop.
-	* 3) Attempts to create a local server
+	* 3) Attempts to create a local server.
 	* 4) Attempts to connect to APNS.
 	* 5) Starts listening for incoming connections. 
 	*	 Blocking socket's type nature ensures only one client's connection will be served at any given time
@@ -180,7 +180,7 @@ class SimpleAPNS_Abstract implements ISimpleAPNS
 							break;
 						}
 
-						fwrite($client, 'Trigger alive...');
+						fwrite($client, 'SAPNS alive...');
 						self::disconnect($client);
 					}
 
